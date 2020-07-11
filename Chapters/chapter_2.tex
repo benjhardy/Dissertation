@@ -3,11 +3,26 @@
 % To generate the final document, run latex, build and quick build commands
 % on the skeleton-thesis file not this one.
 
-\chapter{Title for Chapter 2}\label{chapters:chapter_2}
+\chapter{DENSE ARRAY DESIGN FOR OPTIMAL TRANSMISSION USING SURFACE LOOPS}\label{chapters:chapter_2}
 \vspace{-7mm}
 
 %% Section
-\section{Section 1}\label{sec:ch_2_sec_1}
+\section{Design Process}\label{sec:ch_2_sec_1}
+With the advantages of parallel transmission (pTx) and push for high channel count, it is natural to consider the upper bound of radiating elements in a dense array. 
+There has yet to be published works demonstrating the viability of greater than 100 degrees of freedom or elements for static RF shimming, 
+in part because this is a convoluted conversation.
+Many assumptions must be made before answering anything close to the question of "How many radiating elements does it take to RF shim a region of interest like the brain?"
+RF elements come in many shapes and designs, coupling may remove the advantage of densely packed elements if not properly dealt with, 
+brain volumes no doubt vary across the patient population, power constraints are unique
+to each scanner, and you want the patient to come out of the scanner without a fried brain! This work attempts to address all of these issues for a particular scanner, 
+specifically the Philips Achieva 7T with Multix capabilities.
+A surface loop is unanimously used across all forms of MR and was chosen as the base element for the dense array.
+Surface loops are often used in dense Rx/Tx arrays due to the ease of decoupling neighboring elements by overlapping the loops to cancel their mutual inductance.
+A combination of decoupling strategies is used in order pack many elements into an array. Self-Decoupled coils work nicely to decouple neighboring loops in one direction, 
+yet coupling 
+Power constraints
+The upper limit of transmission elements is entirely dependent on the channel count or power available and coupling between neighboring elements. 
+
 
 %% Subsection
 \subsection{Subsection 1}\label{subsec:subsec_2.1.1}
